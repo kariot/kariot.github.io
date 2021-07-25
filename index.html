@@ -1,482 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Sreehari K</title>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <meta property="og:title" content="Sreehari K"/>  
-    <meta property="og:description" content="Personal Site"/> 	  
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="icon" href="images/favicon.png">	  
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="My personal website features all of my apps and specifics on how each one was developed.">
+    <meta name="author" content="Sreehari K">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Sreehari's Portfolio" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content="Sreehari K's Portfolio"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="My personal website features all of my apps and specifics on how each one was developed." /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="https://kariot.me/images/Preview.png" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
 
-    <link rel="stylesheet" href="css/aos.css">
+    <!-- Webpage Title -->
+    <title>Sreehari K</title>
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4CWH6H1TWV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 
-  gtag('config', 'G-4CWH6H1TWV');
-</script>
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Sreehari K</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+	<!-- Favicon  -->
+    <link rel="icon" href="images/phone.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-		  
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  
-	
-  <!-- particles -->
-	  <div id="particles-js"></div>
-	  
-	  <section class="hero-wrap js-fullheight">
-<!--       <div class="overlay"></div> -->
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-          	<div class="text text-center">
-          		<span class="subheading">Hey! I am</span>
-		  				<h1>Sreehari K</h1>
-			  				<h2>I'm  
-								  <span
-								     class="txt-rotate"
-								     data-period="2000"
-								     data-rotate='[ " an Android Dev.", "an iOS Dev.", " a Designer."," a Learner"]'></span>
-								</h2>
-							</div>
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+             <a class="navbar-brand logo-text page-scroll" href="index.html"><img src="images/phone.png" style="width: 38px; margin-bottom: 5px;"> Sreehari K</a>
+
+            <!-- Image Logo -->
+<!--            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#description">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="sreehari-resume.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-	      <div class="scrollDown">
-		<span></span>
-		<span></span>
-		<span></span>
-  	      </div>
-        </div>
-      </div>
-</button>
-	 <div class="glyphicon glyphicon-arrow-down"></div>
-    </section>
-
-    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex no-gutters">
-    			<div class="col-md-6 col-lg-6 d-flex">
-    				<div class="img-about img d-flex align-items-stretch">
-    					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.png);">
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		            <h2 class="mb-4">About Me</h2>
-		            <p>I am an Android developer based in Calicut, India. I
-					specialize in native Android app development. I create
-					beautiful, usable professional android apps using best
-					practice, accessibility, and android design guidelines. 
-					I love to travel, and I love my Work!</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span>Sreehari K</span></li>
-		            	<li class="d-flex"><span>Email:</span> <span style="font-size: 14px">sreeharikariot@gmail.com</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>+91 8075826019</span></li>
-		            	<li class="d-flex"><span>City: </span> <span>Calicut</span></li>
-		            	<li class="d-flex"><span>Country: </span> <span>India</span></li>
-
-		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-                <p><a href="resume/sreehari-resume.pdf" target="_blank" class="btn btn-primary py-3 px-3">Download CV</a></p>
-              </div>
-	          </div>
-	        </div>
-        </div>
-    	</div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-3">
-				    <nav id="navi">
-					    <ul>
-					      <li><a href="#page-1">Education</a></li>
-					      <li><a href="#page-2">Experience</a></li>
-					      <li><a href="#page-3">Skills</a></li>
-					      <li><a href="#page-4">Projects</a></li>
-					    </ul>
-					  </nav>
-					</div>
-					<div class="col-md-9">
-					  <div id="page-1" class= "page one">
-					  	<h2 class="heading">Education</h2>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-graduation-cap"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<h2>Indira Gandhi National Open University</h2>
-		    					<span class="position">Bachelor of Computer Applications</span>
-		    					<p>Calicut - Kerala</p>
-		    					<span class="date">2020-2023 (expected graduation)</span>
-	    					</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-graduation-cap"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<h2>Govt. Polytechnic College Tirurangadi</h2>
-		    					<span class="position">Diploma in Engineering</span>
-		    					<p><strong>Computer Engineering</strong></p>
-		    					<p>Malappuram - Kerala</p>
-		    					<span class="date">2015-2018</span>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-book"></span>
-					    	</div>
-					    	<div class="text pl-3">			
-		    					<h2>SSHSS Moorkanad</h2>
-		    					<span class="position">Matriculation</span>
-		    					<p><strong>Computer Science</strong></p>
-		    					<p>Malappuram - Kerala</p>
-		    					<span class="date">2013-2015</span>
-		    				</div>
-	    				</div>
-					  </div>
-
-					  <div id="page-2" class= "page two">
-					  	<h2 class="heading">Experience</h2>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-suitcase"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<h2>Android/iOS Developer</h2>
-		    					<span class="position">Freelancing</span>
-		    					<p class="date">Apr 2021 - Present</p>
-		    					<ul>
-		    						<li>Design and Develope Android/iOS Apps</li>
-		    						<li>Monitor and Manage Play/App Store</li>
-		    					</ul>
-		    				</div>
-	    				</div>
-						<div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-suitcase"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<h2>Android Dev</h2>
-		    					<span class="position">Aeth Analytica Private Limited</span>
-		    					<p class="date">May 2019 - Apr 2021</p>
-		    					<ul>
-		    						<li>Create Performace Oriented Android Apps</li>
-		    						<li>Create UI/UX With Best Practices</li>
-		    						<li>Publish And Maintain Apps In Play/App Store</li>
-		    					</ul>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-suitcase"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<h2>Demonstrator</h2>
-		    					<span class="position">Ma'din Polytechnic College Malappuram</span>
-		    					<p class="date">Sept 2018 - Apr 2019</p>
-		    					<ul>
-		    						<li>Guide students in their academics</li>
-		    					</ul>
-		    				</div>
-	    				</div>
-					  </div>
-					  <div id="page-3" class= "page three">
-					  	<h2 class="heading">Skills</h2>
-					  	<!-- Skill Section -->
-					  	<div class="row mb-4 ftco-animate">
-					  		<div class="col grow"><img class="img-fluid" src="images/skills/javascript.png" title="Android SDK"></div>
-					  		<div class="col grow"><img class="img-fluid" src="images/skills/node.png" title="Kotlin"></div>
-					  		<div class="col grow"><img class="img-fluid" src="images/skills/express.png" title="Swift"></div>
-					 <div class="col grow"><img class="img-fluid" src="images/skills/java.png" title="Java"></div>
-					  	
-					  	</div>
-					  	<div class="row mb-4 ftco-animate">
-					  		<div class="col grow"><img class="img-fluid" src="images/skills/photoshop.png" title="Photoshop"></div>
-					  		<div class="col grow"><img class="img-fluid" src="images/skills/illustrator.png" title="Git"></div>
-					  		<div class="col grow"><img class="img-fluid" src="images/skills/illustrator.png" title="Illustrator"></div>
-					  		<div class="col grow"><img class="img-fluid" src="images/skills/lightroom.png" title="Lightroom"></div>
-					  	</div>
-					  	
-
-					  	
-					  </div>
-					  </div>
-					</div>
-			  </div>
-    	</div>
-    </section>
-
-    <section class="ftco-section" id="project-section">
-    	<div class="container-fluid px-md-5">
-    		<div class="row justify-content-center py-5 mt-5">
-          <div id="page-4" class="col-md-12 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Projects</h2>
-          </div>
-        </div>
-    		<div class="row">
-					<div class="col-md-4 text-center d-flex ftco-animate">
-						<a href="https://play.google.com/store/apps/details?id=com.matajarbynesto.customer" target="_blank" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-bomberman"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-4">Matajar(Live)</h3>
-								<p><strong>Native Android • Rest APIs</strong></p>
-								<p>Matajar By Nesto a leading online hypermarket shopping
-app, build with native android code base and REST APIs. The
-app now runs successfully on 10,000+ devices in android all
-across UAE.</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-						<a href="https://play.google.com/store/apps/details?id=com.mymagickart.customer" target="_blank" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-bomberman"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-4">MyMagicKart(Live)</h3>
-								<p><strong>Native Android • Rest APIs</strong></p>
-								<p>MyMagicKart is a company product which works as a
-									platform for shops to show case and sell their products. User
-									can find different shops and purchase goods/foods from desired
-									stores</p>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-						<a href="https://play.google.com/store/apps/details?id=com.freshbucket.customer" target="_blank" class="services-1 shadow">
-							<span class="icon">
-								<i class="flaticon-bomberman"></i>
-							</span>
-							<div class="desc">
-								<h3 class="mb-4">Freshbucket (Beta)</h3>
-								<p><strong>Native Android • Rest APIs</strong></p>
-								<p>Freshbucket is an online shopping for meat and fish across various cities in India and UAE. The app is still in production</p>
-							</div>
-						</a>
-					</div>					
-				</div>
-				
-					
-					
-				</div>
-				</div>
-    	</div>
-    </section>
- 
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
 
 
-    <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
-    	<div class="overlay"></div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>I'm <span>Available</span> for Hire</h2>
-						<p class="mb-0">I am looking for opportunities in<br>Software Development • Software Engineering • Web Development</p>
-						<p class="mt-3 mb-0"><a href="resume/sreehari-resume.pdf" target="_blank" class="btn btn-primary py-3 px-5">Hire me</a></p>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h1>Sreehari K</h1>
+                        <p class="p-large p-heading">I am a mobile app developer with 2+ years of experience developing, testing, and publishing apps for the iOS and Android. I am currently working as a Full time mobile developer in Calicut, Kerala.</p>
+<!--                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>DOWNLOAD</a>-->
+                        <a class="btn-solid-lg" href="sreehari-resume.pdf" target="_blank">Resume</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/gallery/header-iphone.png" alt="alternative">
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <div class="deco-white-circle-1">
+            <img src="images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-1 -->
+        <div class="deco-white-circle-2">
+            <img src="images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-2 -->
+        <div class="deco-blue-circle">
+            <img src="images/decorative-blue-circle.svg" alt="alternative">
+        </div> <!-- end of deco-blue-circle -->
+        <div class="deco-yellow-circle">
+            <img src="images/decorative-yellow-circle.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+        <div class="deco-green-diamond">
+            <img src="images/decorative-green-diamond.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-4 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Contact Me</h2>
-          </div>
-        </div>
 
-        <div class="row d-flex justify-content-center contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Contact Number</h3>
-		            <p><a>+91 8075826019</a></p>
-	            </div>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Email Address</h3>
-		            <p><a href="mailto:sreeharikariot@gmail.com">sreeharikariot@gmail.com</a></p>
-		          </div>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Website</h3>
-		            <p><a onclick="window.location.href=this">kariot.me</a></p>
-	            </div>
-	          </div>
-          </div>
-        </div>
+    <!-- Small Features -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
 
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="#" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-          
-          </div>
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Developer</h5>
+                        </div>
+                    </div>
+                    <!-- end of card -->
 
-          <div class="col-md-6 d-flex">
-          	<div class="img" style="background-image: url(images/about.png);"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-		
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image green">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Designer</h5>
+                        </div>
+                    </div>
+                    <!-- end of card -->
 
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About</h2>
-              <p>I like working with new tools and technologies</p>
-              <p class="mt-4"><u>Social Links</u></p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-                <li class="ftco-animate"><a href="https://github.com/kariot" target="_blank"><span class="icon-github"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.linkedin.com/in/kariot/" target="_blank"><span class="icon-linkedin-square"></span></a></li>
-				<li class="ftco-animate"><a href="https://stackoverflow.com/users/13049473/sreehari-k" target="_blank"><span class="icon-stack-overflow"></span></a></li>
-                <li class="ftco-animate"><a href="https://instagram.com/eat.code.ride" target="_blank"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a></li>
-                <li><a href="#project-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-		
-              </ul>
-            </div>
-          </div>
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image red">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Engineer</h5>
+                        </div>
+                    </div>
+                    <!-- end of card -->
 
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Question?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><a ><span class="icon icon-phone"></span><span class="text">+91 8075826019</span></a></li>
-	                <li><a href="mailto:sreeharikariot@gmail.com"><span class="icon icon-envelope"></span><span class="text">sreeharikariot@gmail.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image yellow">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Collaborator</h5>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image blue">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Innovator</h5>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of small features -->
+
+
+    <!-- Description 1 -->
+    <div id="description" class="basic-1">
+        <div class="container" style="padding-top:50px">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/description-1-app.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>About Me</h2>
+                        <p >I am an Android/iOS developer living in the Calicut, Kerala. I started 2019 as an Android Developer. For the past two years, I have focused on using Kotlin and Swift to build mobile apps. I also work with designing tools such as Adobe Photoshop, illustrator, XD to design and prototype UI/UX.</p>
+                        <!-- <h4 class="appdev">Cornell AppDev</h4>
+                        <p>At Cornell University, I joined an Engineering Project Team called Cornell AppDev. Our goal is to develop mobile apps for the Cornell and Ithaca community. Currently we have 5 apps on the App Store. I started by working on Eatery, our most popular app with over 3,000 daily users, which tracks what's being served at dining halls on campus. I also helped develop a new app called CourseGrab which helps students enroll in classes that are full. All of our code is open-source and can be found on my GitHub.</p> -->
+                        <a class="btn-solid-reg page-scroll" href="https://github.com/kariot/" target="_blank">GitHub</a> <a class="btn-outline-reg page-scroll" href="http://linkedin.com/in/kariot" target="_blank" style="margin-left: 10px">LinkedIn</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of description 1 -->
+
+    <!-- Wellnest Details Lightbox -->
+	<!-- Details Lightbox -->
+	<div id="wellnest-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
-          <div class="col-md-12 text-center">
-          	<i class="icon-heart color-danger" aria-hidden="true"></i>
-          	<i class="icon-heart color-danger" aria-hidden="true"></i>
-			<p class="mt-5">Copyright &copy;<script>document.write(new Date().getFullYear());</script></p>
-          </div>
-        </div>
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/gallery/matajar-ios.png" alt="alternative">
+                </div> <!-- end of image-container -->
+			</div>
+			<div class="col-lg-4">
+                <h3>Matajar(Android & iOS)</h3>
+				<hr>
+                <p>Matajar is a location based muti vendor e-commerce app with a large number of shops selling products. It has 50K+ installs and runs all across UAE.</p>
+                <h4>Development</h4>
+                <p>Matajar was released in May 2020 after a month of development by the team. I was solely responsible for building the Android & iOS app from scratch as along with its internal apps.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Kotlin, Swift & UIKit</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">MVP Architecture</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">REST APIs</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Firebase Integration</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" target="_blank" href="https://apps.apple.com/in/app/matajar-by-nesto/id1512835674">App Store</a>
+                <a class="btn-solid-reg mfp-close page-scroll" target="_blank" href="https://play.google.com/store/apps/details?id=com.matajarbynesto.customer">Play Store</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+                
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox -->
+    <!-- end of description 1 details lightbox -->
+
+
+    <!-- rong Details Lightbox -->
+	<!-- Details Lightbox -->
+
+    <!-- Detour Details Lightbox -->
+	<!-- Details Lightbox -->
+	<div id="detour-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/gallery/freshbucket-ios-mockup.jpg" alt="alternative">
+                </div> <!-- end of image-container -->
+			</div>
+			<div class="col-lg-4">
+                <h3>Freshbucket (Android)</h3>
+				<hr>
+                <p>Freshcuket is an online fresh products delivery app based on Calicut, Kerala.</p>
+                <h4>Development</h4>
+                <p>Freshbucket was developed over the course of one month. The app was released in October 2020.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Kotlin & XML</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">MVP Architecture</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">REST APIs</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Firebase Integration</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" target="_blank" href="https://play.google.com/store/apps/details?id=com.freshbucket.customer">Download</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+			</div>
+		</div> <!-- end of row -->
+    </div>
+    <div id="rong-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/gallery/quick-news.jpg" alt="alternative">
+                </div> <!-- end of image-container -->
+			</div>
+			<div class="col-lg-4">
+                <h3>Quick News</h3>
+				<hr>
+                <p>Quick News is a regional news app. It collects data from RSS feeds of different news providers.</p>
+                <h4>Development</h4>
+                <p>Quick News was developed over the course of two weeks to experiment some modern Android Development. The app was released in July 2021.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Kotlin</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">MVVM Architecture</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">ViewModel and LiveData</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Navigation Components</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" target="_blank" href="https://play.google.com/store/apps/details?id=me.kariot.quicknews">Download</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+			</div>
+		</div> <!-- end of row -->
+    </div>
+    <!-- end of lightbox-basic -->
+    <!-- end of details lightbox -->
+    <!-- end of description 1 details lightbox -->
+
+    <!-- Gummy Gap Details Lightbox -->
+	<!-- Details Lightbox -->
+	<div id="gummygap-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/gallery/dizabo.jpg" alt="alternative">
+                </div> <!-- end of image-container -->
+			</div>
+			<div class="col-lg-4">
+                <h3>Dizabo Super App</h3>
+				<hr>
+                <p>Dizabo super is a location base e-commerce app where you can find multiple shops and services near your location..</p>
+                <h4>Development</h4>
+                <p>Dizabo's month-long development started in October 2020 and ended in December 2021.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Kotlin</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">MVP Architecture</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">REST APIs</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Firebase</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" target="_blank" href="https://play.google.com/store/apps/details?id=com.dizabo">Download</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox -->
+    <!-- end of description 1 details lightbox -->
+
+    <!-- Eatery Details Lightbox -->
+  <!-- Details Lightbox -->
+  <div id="eatery-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+      <div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/gallery/store-manager.jpg" alt="alternative">
+                </div> <!-- end of image-container -->
       </div>
-    </footer>
-    
-  
+      <div class="col-lg-4">
+                <h3>Matajar Store</h3>
+        <hr>
+                <p>Matajar is an internal app that helps Shops to manage their orders. </p>
+                <h4>Development</h4>
+                <p>The app developed along with other Matajar Apps.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">MVC Architecture</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Volley</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Socket IO</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" target="_blank" href="https://play.google.com/store/apps/details?id=ae.matajar.store">Download</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+      </div>
+    </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox -->
+    <!-- end of description 1 details lightbox -->
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <!-- CourseGrab Details Lightbox -->
+  <!-- Details Lightbox -->
+  <div id="coursegrab-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+      <div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/gallery/wallsapp-front.jpg" alt="alternative">
+                </div> <!-- end of image-container -->
+      </div>
+      <div class="col-lg-4">
+                <h3>WallsApp</h3>
+        <hr>
+                <p>WallsApp is an opensource app that made using modern android app developement tools and practices.</p>
+                <h4>Development</h4>
+                <p>The app is made with a MVVM Architecture using. The app consumes data from REST APIs from <a style="color:#fe0e01; text-decoration: none" target="_blank" href="https://www.pexels.com/api/">Pexels</a></p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">MVVM Architecture</div>
+                    </li>
+                    <li class="media">
+                        <i class="far fa-check-square"></i><div class="media-body">Retrofit & Coroutine</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" target="_blank" href="https://github.com/kariot/mvvm-wallpaper-app">Download</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+      </div>
+    </div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox -->
+    <!-- end of description 1 details lightbox -->
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
 
-  <script src="js/particles.min.js"></script>
-  <script src="js/app.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+    <!-- Description 2 -->
+    <div class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="tabs-container">
+
+                        <!-- Tabs Links -->
+                        <ul class="nav nav-tabs" id="cedoTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-tools"></i>Skills</a>
+                            </li>
+                        </ul>
+                        <!-- end of tabs links -->
+
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="cedoTabsContent">
+                            <!-- Tab -->
+                            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                                <p><strong>Skills</strong> in Android/iOS development and design empower me to deliver high quality apps.</p>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Proficient in writing Kotlin/Swift and building apps with Android Studio & Xcode.</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Well-versed with many Modern Android Toolkits including Material Design, MVVM, Jetpack Components as well as third-party libraries.</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Experience working with Firebase,Alamofire, Retrofit, Volley, and communicating with REST APIs.</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Comfortable building UI using Storyboards for iOS and XML for Android.</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Worked with Adobe Photoshop, Adobe Illustrator, Adobe XD to handoff and implement designs.</div>
+                                    </li>
+                                    <li class="media">
+                                        <i class="fas fa-square"></i>
+                                        <div class="media-body">Used Git and GitHub for version control and to share my code through open source. </div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+
+                            <!-- Tab -->
+                            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                                <p><strong>Cycling</strong> is a great way I can explore and travell. I love to ride cycle everyday in search of unknown lands.</p>
+                                <p><strong>Swimming</strong> is a hobby of mine that started way back in 2013. My personal best for the 3x3 is 15.37 seconds, and I can also solve other types of puzzles like the 2x2 through 6x6, pyraminx, megaminx, and various shape-shifting cuboids.</p>
+                                <p><strong>Travelling</strong> are something I really enjoy playing. I am a huge fan of HQ Trivia and have developed a number of bots to help answer the questions and generate extra lives. I've won over $6,000 playing the game, as well as games like it.</p>
+                                <p><strong>Gaming</strong> has been a passion of mine for a number of years. In total, I have designed and built two PCs from scratch, one of them being for myself and the other for a friend of mine.</p>
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+                        </div> <!-- end of tab-content -->
+                        <!-- end of nav tabs content -->
+
+                    </div> <!-- end of tabs-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" style="padding-top: 100px"src="images/description-2-app.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of description 2 -->
+
+
+        <!-- Features -->
+    <div id="features" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Apps</h2>
+                    <p class="p-heading">I have developed 10+ apps, 6 of which are published to the Store. My most notable projects are listed below with additional information about their development and release.</p>
+                </div> <!-- end of div -->
+            </div> <!-- end of div -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto popup-with-move-anim" href="#wellnest-details-lightbox">
+                      <img class="img-fluid" src="images/gallery/matajar-android.png" alt="">
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto popup-with-move-anim" href="#detour-details-lightbox">
+                      <img class="img-fluid" src="images/portfolio/freshbucket-android.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto popup-with-move-anim" href="#rong-details-lightbox">
+                      <img class="img-fluid" src="images/portfolio/news-app.jpg" alt="">
+                    </a>
+                  </div>
+                </div> <!-- end of col -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto popup-with-move-anim" href="#gummygap-details-lightbox">
+                      <img class="img-fluid" src="images/portfolio/diazabo.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto popup-with-move-anim" href="#eatery-details-lightbox">
+                      <img class="img-fluid" src="images/portfolio/store-manager.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto popup-with-move-anim" href="#coursegrab-details-lightbox">
+                      <img class="img-fluid" src="images/portfolio/wallsapp-front.jpg" alt="">
+                    </a>
+                  </div>
+                </div> <!-- end of col -->
+        </div> <!-- end of container -->
+    <!-- end of features -->
+
+
+
+
+    <!-- Statistics -->
+    <div id="stats" class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Counter -->
+                    <div id="counter">
+                        <div class="cell">
+                            <i class="fas fa-code purple"></i>
+                            <div class="counter-value number-count" data-count="2.3">1</div>
+                            <p class="counter-info">Years Experience</p>
+                        </div>
+                        <div class="cell">
+                            <i class="fas fa-mobile-alt green"></i>
+                            <div class="counter-value number-count" data-count="6">1</div>
+                            <p class="counter-info">Published Apps</p>
+                        </div>
+                        <div class="cell">
+                            <i class="fas fa-arrow-down red"></i>
+                            <div class="counter-value text-count" data-count="10000">100</div>
+                            <p class="counter-info">Downloads</p>
+                        </div>
+                        <div class="cell">
+                            <i class="fas fa-star yellow"></i>
+                            <div class="counter-value number-count" data-count="4.2">1</div>
+                            <p class="counter-info">Average Rating</p>
+                        </div>
+                    </div>
+                    <!-- end of counter -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of counter -->
+    <!-- end of statistics -->
+
+
+    <!-- Download -->
+    <div id="download" class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/gallery/news-mockup.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                    <p style= "padding-top: 40px" class="p-large">Check out my latest app called Quick News! Quick News has been downloaded over 1,0 times and maintains a positive 4.7 star rating on the Play Store.</p>
+                    <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=me.kariot.quicknews" target="_blank"><i></i>Download</a>
+                
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <div class="deco-white-circle-1">
+            <img src="images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-1 -->
+        <div class="deco-white-circle-2">
+            <img src="images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-2 -->
+        <div class="deco-blue-circle">
+            <img src="images/decorative-blue-circle.svg" alt="alternative">
+        </div> <!-- end of deco-blue-circle -->
+        <div class="deco-yellow-circle">
+            <img src="images/decorative-yellow-circle.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+        <div class="deco-green-diamond">
+            <img src="images/decorative-green-diamond.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of download -->
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <span class="fa-stack">
+                <a href="https://www.linkedin.com/in/kariot/" target="_blank">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="https://github.com/kariot" target="_blank">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="https://twitter.com/eat_code_ride" target="_blank">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="https://www.instagram.com/eat.code.ride/" target="_blank">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="mailto:sreeharikariot@gmail.com">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope-o fa-stack-1x"></i>
+                </a>
+            </span>
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © Sreehari K 2021</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="https://kit.fontawesome.com/de87ddbdd3.js" crossorigin="anonymous"></script>
+</body>
 </html>
